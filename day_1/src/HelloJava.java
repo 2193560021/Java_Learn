@@ -8,9 +8,10 @@ class Book {        //定义一个类
 
 public class HelloJava {
     public static void main(String[] args) {
-        Book bk = new Book();   //声明并实例化对象
-        //bk.title = "Java开发";    //操作属性内容
-        //bk.price = 89.9;
+        Book bk = null;             //声明
+        bk = new Book();            //并实例化对象
+        bk.title = "Java开发";    //操作属性内容
+        bk.price = 89.9;
         bk.getInfo();
     }
 }
