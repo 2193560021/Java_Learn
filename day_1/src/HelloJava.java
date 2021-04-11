@@ -13,5 +13,14 @@ public class HelloJava {
         bk.title = "Java开发";    //操作属性内容
         bk.price = 89.9;
         bk.getInfo();
+
+        Book bookA = new Book();
+        Book bookB = null;
+        bookA.title = "Java";
+        bookA.price = 89.8;
+        bookB = bookA;      //引用传递
+        bookB.price = 79.8;
+        bookA.getInfo();
+        bookB.getInfo();
     }
 }
